@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-notice-section {
+            width: 100%;
+            padding: 20px;
+            background: #f5f5f5; /* Optional, for background color */
+        }
+
+        .notice-container {
+            display: flex; /* Flexbox layout */
+            justify-content: space-between; /* Evenly space out the columns */
+            gap: 20px; /* Optional, for spacing between columns */
+        }
+
+        .notice-bord, .event-card, .event1-card {
+            flex: 1; /* Each column takes equal space */
+            padding: 15px;
+            background: white; /* Optional, for background color */
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optional, for subtle shadow */
+        }
+
+        .notice-bord-heading, .event-heading, .event1-heading {
+            font-size: 1.5rem; /* Adjust as needed */
+            text-align: center; /* Center the headings */
+        }
+
+        ul {
+            list-style: none; /* Remove default list style */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+
+        /* Style for the first division - Headline for course name */
+        .headline {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Style for the second division - Adjustable content, with 20% height */
+        .content {
+            background-color: #e0e0e0;
+            padding: 20px;
+            height: 20%; /* Specifying 20% height */
+            overflow: auto; /* Ensuring content can scroll if needed */
+        }
+
+        /* Style for the third division - Faculty names */
+        .faculty {
+            background-color: #d0d0d0;
+            padding: 20px;
+        }
+
+        /* Style for the fourth division - Facilities */
+        .facilities {
+            background-color: #c0c0c0;
+            padding: 20px;
+        }
+
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            
+            body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+#departments {
+    background-color: lightblue;
+}
+
+#images {
+    background-color: lightyellow;
+}
+
+#faculty {
+    background-color: lightgreen;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+.column div {
+    margin-bottom: 15px;
+}padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+          <img src="logo.jpeg" 
+               alt="Brand logo"> 
+                  <span class="brand-logo-name">
+                    N.V Polytechnic
+                  </span>
+          </a>
+        <nav class="navbar">
+            <ul class="navbar-lists" id="myTopnav">
+                <li>
+                      <i class="fas fa-home"></i>
+                          <a class="navbar-link home-link" href="#">
+                              Home</a>
+                  </li>
+                <li>
+                      <i class="fas fa-user"></i>
+                          <a class="navbar-link about-link" 
+                           href="#about-us-section">
+                              About Us
+                          </a>
+                </li>
+                <li>
+                      <i class="fas fa-envelope"></i>
+                          <a class="navbar-link contact-link" 
+                           href="#contact-form">
+                          Contact Us
+                          </a>
+                  </li>
+                <li>
+                      <i class="fas fa-bullhorn"></i>
+                          <a class="navbar-link service-link" 
+                           href="#notice-bord-sction">
+                          activities
+                          </a>
+                  </li>
+                <li><i class="fas fa-map-marked-alt"></i>
+                      <a class="navbar-link contact-link"
+                       href="#campus-on-map">
+                      Our Campus
+                      </a>
+                  </li>
+            </ul>
+            <a href="javascript:void(0);" 
+               class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="clg-img-container">
+            <div class="img-container">
+                <img src="nv.jpg" alt="not found img" height="9000px" class="clg-img">
+                <h1 class="img-title">
+                  Welcome to Nutan Vidyalaya Polytechnic
+                  </h1>
+            </div>
+        </div>
+
+        
+        <div class="main-notice-section" id="notice-bord-sction">
+
+            <div class="notice-container">
+                <div class="notice-bord">
+                    <h2 class="notice-bord-heading">Courses Available</h2>
+                    <ul>
+                        <a href="EC.html"><li><i>Electronics and Communication Egg -</i> <span class="new-text">1983</span></li></a>
+                        <a href="CS.html"><li><i>Computer Science Egg -</i> <span class="new-text">1992</span></li></a>
+                        <a href="MECH.html"><li><i>Mechanical Engineering Egg -</i> <span class="new-text">2008</span></li></a>
+                        <a href="CV.html"><li><i>Civil Engineering Egg -</i> <span class="new-text">2008</span></li></a>
+                        <a href="EE.html"><li><i>Electrical Engineering Egg -</i> <span class="new-text">2008</span></li></a>
+                    </ul>
+                </div>
+        
+                <div class="event-card">
+                    <h2 class="event-heading">Activities</h2>
+                    <div class="event-details">
+                        <div class="event"><h3>1. Welcome Experienced Faculties</h3></div>
+                        <div class="event"><h3>2. Welcome equipped laboratories</h3></div>
+                        <div class="event"><h3>3. Beautiful Campus & Spacious</h3></div>
+                        <div class="event"><h3>4. Welcome well-stocked library</h3></div>
+                        <div class="event"><h3>5. NSS, CCTEK, REDCROSS & Sports Faculties Available</h3></div>
+                    </div>
+                </div>
+        
+                <div class="event1-card">
+                    <h2 class="event1-heading">Achievements</h2>
+                    <div class="event1-details">
+                        <div class="event1"><h3>1. Bagged Rank in Diploma</h3></div>
+                        <div class="event1"><h3>2. Winner in state-level Sports meet</h3></div>
+                        <div class="event1"><h3>3. Best Teacher award winners by students</h3></div>
+                        <div class="event1"><h3>4. Good performance in cultural meets</h3></div>
+                        <div class="event1"><h3>5. Toppers in district level</h3></div>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </div>
+        <section id="about-us-section">
+            
+                <h2 class="aboutus-heading">About Us</h2>
+                <p style="  text-align: justify;">
+                      1907, the year of inception of N.V. Society, was the year of fusion and confusion in respect of Politico-social values in the field of education. People began to have introspection on education. When the educated society began to stare with their eyes being slowly opened from the long stupor, so many lapses came to the lime light.
+
+                      Of these multi-lapses, (foreign) English medium of education was the prime one. English language was not only used in teaching Maths, History, Geography ,and allied Science subjects but also in the teaching of language like Persian , Sanskrit etc, on the pretext of making learning simple and digestible. This had the negative effect on the students. In terms of wastage of time and knowledge, we did not realize our systematic lagging behind.
+                      
+                      In the Knowledge market, the ever decrease in the value of our currency caused depression in the minds of our educated lot who, in the opinion of late Prof. Gole, was not able to face the challenges either physically or mentally. Seeing the high mortality rate of the educated, a debate was on, on 'why our graduates are dying young'
+                      
+                      The education devoid of morality and religion and the doubtful policies of education gave way to atheism and dogmatism.
+                      
+                      People began to feel that their dedication alone would bring a sea change in the education system. They began to move this idea enthusiastically like the children moving wooden cart with a found of hope of early walking and running. Result of this historic move resulted in the start of many private educational institutions.
+                      
+                      Even in the Gulbarga elite this flow of thought was on the Late Shri. VithalRao Devlgaonkar, Late Justice Keshvarao Koratkar, Shri Girirao Anna Jahagirdar, Shri Narayanrao Ratkalkar, ware able to start a library,(a miniature) a mini societal school of education. That time library was a work-place of moral activities of the current issues. Late Shri Vithalrao was so actively generous that he used to read the thought provoking and informative passages form the newspapers, periodicals and books, loudly to the People and discuss the important ones with them. That had an effect on them and the desire for uplifting the society was ignited in them and all of them became active in serving the Society. They began to strongly feel that one can render service to the society through the media of education. There was no school to impart education through mother tongue. The already existing Marathi school had been converted into Urdu Medium School. There, A to Z was taught in Urdu medium, Marathi speaking students felt miserable. Even the same was prevalent in high school. Thousands of Rupees of the Government spent on these two schools was not able to solve the problem of the students. The elite of Gulbarga having confidence in self-help and urge for societal service decided to solve the Problem once for all.
+                </p>
+            
+        </section>
+
+        <section class="our-school-map" id="campus-on-map">
+            <h2 class="location-heading">
+                  Find Our Location On Map
+              </h2>
+            <iframe src=
+            https://www.google.com/maps/place/N.V+Polytechnic/@17.3310909,76.8287091,15z/data=!4m6!3m5!1s0x3bc8c7567d253c43:0xa3f4962d740729c!8m2!3d17.3310909!4d76.8287091!16s%2Fg%2F1tfm9pl1?entry=ttu                    width="100%" height="450" 
+                    style="border:0;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+        </section>
+
+        <section id="contact-form">
+            <h2 class="contact-form-heading">
+              Contact Us Form
+              </h2>
+            <div class="container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                          Full Name
+                          </label>
+                        <input type="text" id="fullName" 
+                               name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"
+                               name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" 
+                               name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" 
+                                  required>
+                          </textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Copyright &copy; 2024, Nutan Vidyalaya Society, Kalaburagi. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
